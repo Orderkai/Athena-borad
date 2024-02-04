@@ -1,4 +1,4 @@
-package com.youkeda.com.kanban.Controller;
+package com.geekcloud.kanborad.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,0 +1,75 @@
+package com.geekcloud.kanborad.dataobject;
+
+import java.time.LocalDateTime;
+
+public class UserDO {
+    private long id;
+
+    private String userName;
+
+    private String passWord;
+
+    private String nickName;
+
+    private String avatar;
+
+    private LocalDateTime gmtCreated;
+
+    private LocalDateTime gmtModified;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public LocalDateTime getGmtCreated() {
+        return gmtCreated;
+    }
+
+    public void setGmtCreated(LocalDateTime gmtCreated) {
+        this.gmtCreated = gmtCreated;
+    }
+
+    public LocalDateTime getGmtModified() {
+        return gmtModified;
+    }
+
+    public void setGmtModified(LocalDateTime gmtModified) {
+        this.gmtModified = gmtModified;
+    }
+}

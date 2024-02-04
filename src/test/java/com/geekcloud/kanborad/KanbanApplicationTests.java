@@ -1,4 +1,4 @@
-package com.youkeda.com.kanban;
+package com.geekcloud.kanborad;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
