@@ -1,4 +1,7 @@
 package com.geekcloud.kanborad.dao;
 
-public class TaskDAO {
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface TaskDAO {
 }

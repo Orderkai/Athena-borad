@@ -7,7 +7,7 @@ public class UserDO {
 
     private String userName;
 
-    private String passWord;
+    private String pwd;
 
     private String nickName;
 
@@ -33,12 +33,12 @@ public class UserDO {
         this.userName = userName;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
     public String getNickName() {
