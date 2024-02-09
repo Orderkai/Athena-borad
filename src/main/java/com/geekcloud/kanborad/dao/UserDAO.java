@@ -13,4 +13,10 @@ public interface UserDAO {
 
     int add(UserDO userDO);
 
+    UserDO findByUserName(String userName);
+//
+//    List<User> findByIds(List<Long> ids);
+//
+//    List<User> search(String keyWord, LocalDateTime startTime, LocalDateTime endTime);
+
 }

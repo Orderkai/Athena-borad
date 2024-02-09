@@ -8,6 +8,7 @@ class KanbanApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

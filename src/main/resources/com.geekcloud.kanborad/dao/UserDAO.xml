@@ -12,10 +12,13 @@
         <result column="gmt_modified" property="gmtModified"/>
     </resultMap>
 
-    <insert id="add" parameterType="com.geekcloud.kanborad.dataobject.UserDO">
+    <insert id="add" parameterType="com.geekcloud.kanborad.dataobject.UserDO" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO kb_user (user_name, pwd, nick_name, avatar, gmt_created, gmt_modified)
-        VALUES (#{userName}, #{pwd}, #{nickName}, #{avatar}, #{gmtCreated}, #{gmtModified})
+        VALUES (#{userName}, #{pwd}, #{nickName}, #{avatar}, now(), now())
     </insert>
 
+    <select id="findByUserName" resultMap="userResultMap">
+        SELECT * FROM kb_user WHERE user_name=#{userName} LIMIT 1
+    </select>
 
 </mapper>
