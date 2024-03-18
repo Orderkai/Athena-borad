@@ -20,9 +20,9 @@
 
 ## 参考资料
 - [SpringBoot官方文档](https://docs.spring.io/spring-boot/docs/current/reference/html/index.html)
-- Maven官方文档
-- MySQL官方文档
-- SSM框架教程
+- [Maven官方文档](https://maven.apache.org/guides/index.html)
+- [MySQL官方文档](https://www.mysqlzh.com/)
+- [MyBatis框架教程](https://mybatis.net.cn/)
 
 ## 注意事项
 - 请确保你的环境满足运行此项目的所有要求。
