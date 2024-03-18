@@ -7,14 +7,27 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public interface UserService {
-    Result<User> login(String userName, String pwd);
+    /**
+     * 注册用户
+     *
+     * @param userName
+     * @param pwd
+     * @return
+     */
+    public Result<User> register(String userName, String pwd);
 
-    Result<User> register(String userName, String pwd);
+    /**
+     * 执行登录逻辑，登录成功返回 User 对象
+     *
+     * @param userName
+     * @param pwd
+     * @return
+     */
+    public Result<User> login(String userName, String pwd);
 
-    User findByUserName(String userName);
+    public User findByUserName(String userName);
 
-    List<User> findByIds(List<Long> ids);
+    public List<User> findByIds(List<Long> ids);
 
-    List<User> search(String keyWord, LocalDateTime startTime, LocalDateTime endTime);
-
+    public List<User> search(String keyWord, LocalDateTime startTime, LocalDateTime endTime);
 }

@@ -9,47 +9,51 @@ import java.io.Serializable;
 * */
 public class Result<D> implements Serializable {
 
-    // 表示执行成功或失败
-    @JsonProperty("isSuccess")
+   @JsonProperty("isSuccess")
     private boolean success = false;
 
-    // 返回消息短码，一般用于出错时，简短描述错误
     private String code;
-    // 返回消息具体信息，一般用于出错时，比较详细的描述错误
     private String message;
 
-    // 返回的具体数据
     private D data;
+
+    public static <T> Result<T> create() {
+        return new Result<T>();
+    }
 
     public boolean isSuccess() {
         return success;
     }
 
-    public void setSuccess(boolean success) {
+    public Result setSuccess(boolean success) {
         this.success = success;
+        return this;
     }
 
     public String getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public Result<D> setCode(String code) {
         this.code = code;
+        return this;
     }
 
     public String getMessage() {
         return message;
     }
 
-    public void setMessage(String message) {
+    public Result<D> setMessage(String message) {
         this.message = message;
+        return this;
     }
 
     public D getData() {
         return data;
     }
 
-    public void setData(D data) {
+    public Result<D> setData(D data) {
         this.data = data;
+        return this;
     }
 }

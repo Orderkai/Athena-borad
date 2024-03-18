@@ -22,10 +22,48 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDAO userDAO;
 
-    /**
-     * 用户登录
-     * @return Result<User>
-     */
+    @Override
+    public Result<User> register(String userName, String pwd) {
+        Result<User> result = new Result<>();
+
+        if (StringUtils.isEmpty(userName)) {
+            result.setCode("600");
+            result.setMessage("用户名不能为空");
+            return result;
+        }
+        if (StringUtils.isEmpty(pwd)) {
+            result.setCode("601");
+            result.setMessage("密码不能为空");
+            return result;
+        }
+
+        UserDO userDO = userDAO.findByUserName(userName);
+        if (userDO != null) {
+            result.setCode("602");
+            result.setMessage("用户名已经存在");
+            return result;
+        }
+
+        // 密码加自定义盐值，确保密码安全
+        String saltPwd = pwd + "_gc1314";
+        // 生成md5值，并转为大写字母
+        String md5Pwd = DigestUtils.md5Hex(saltPwd).toUpperCase();
+
+        UserDO userDO1 = new UserDO();
+        userDO1.setUserName(userName);
+        // 初始昵称等于用户名
+        userDO1.setNickName(userName);
+        userDO1.setPwd(md5Pwd);
+
+        userDAO.add(userDO1);
+
+        result.setSuccess(true);
+
+        result.setData(userDO1.toModel());
+
+        return result;
+    }
+
     @Override
     public Result<User> login(String userName, String pwd) {
 
@@ -50,7 +88,7 @@ public class UserServiceImpl implements UserService {
         }
 
         // 密码加自定义盐值，确保密码安全
-        String saltPwd = pwd + "_ykd2050";
+        String saltPwd = pwd + "_gc1314";
         // 生成md5值，并转为大写字母
         String md5Pwd = DigestUtils.md5Hex(saltPwd).toUpperCase();
 
@@ -67,58 +105,29 @@ public class UserServiceImpl implements UserService {
         return result;
     }
 
-     /**
-     * 注册用户
-     * @return Result<User>
+    /**
+     * 搜索别人
+     * @param userName
+     * @return
      */
     @Override
-    public Result<User> register(String userName, String pwd) {
-        Result<User> result = new Result<>();
-        if (StringUtils.isBlank(userName)) {
-           result.setCode("600");
-           result.setMessage("用户名不能为空");
-           return result;
-        }
-        if (StringUtils.isBlank(pwd)) {
-            result.setCode("601");
-            result.setMessage("密码不能为空");
-            return result;
-        }
-        UserDO userDO = userDAO.findByUserName(userName);
-        if (userDO != null) {
-            result.setCode("602");
-            result.setMessage("用户名已经存在");
-            return result;
-        }
-        //MD5
-        String saltPwd = pwd + "_geekcloud1314";
-        String md5Pwd = DigestUtils.md5Hex(saltPwd).toUpperCase();
-
-        UserDO userDO1 = new UserDO();
-        userDO1.setUserName(userName);
-        userDO1.setPwd(md5Pwd);
-        userDAO.add(userDO1);
-
-        result.setSuccess(true);
-
-        result.setData(userDO1.toModel());
-        return result;
-    }
-
-    @Override
     public User findByUserName(String userName) {
-        if(StringUtils.isBlank(userName)){
+        // 防止输入空参数的异常情况
+        if (StringUtils.isBlank(userName)) {
             return null;
         }
+
         UserDO userDO = userDAO.findByUserName(userName);
         return userDO.toModel();
     }
 
     @Override
     public List<User> findByIds(List<Long> ids) {
-        if(CollectionUtils.isEmpty(ids)){
+        //防止不输入参数的异常情况
+        if (CollectionUtils.isEmpty(ids)) {
             return Collections.emptyList();
         }
+
         List<UserDO> userDOs = userDAO.findByIds(ids);
         return toModels(userDOs);
     }
