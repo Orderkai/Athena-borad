@@ -21,4 +21,50 @@
         SELECT * FROM kb_user WHERE user_name=#{userName} LIMIT 1
     </select>
 
+    <update id="update" parameterType="com.geekcloud.kanborad.dataobject.UserDO">
+        update kb_user
+        <set>
+            <if test="nickName != null">
+                nick_name=#{nickName},
+            </if>
+            gmt_modified=now()
+        </set>
+        where id=#{id}
+    </update>
+
+    <delete id="delete">
+        delete from kb_user where id=#{id}
+    </delete>
+
+    <select id="query" resultMap="userResultMap">
+        select * from kb_user where user_name like CONCAT('%', #{keyWord}, '%')
+        or nick_name like CONCAT('%', #{keyWord}, '%')
+    </select>
+
+    <select id="search" resultMap="userResultMap">
+        select * from kb_user
+        <where>
+            <if test="keyWord != null">
+                user_name like CONCAT('%', #{keyWord}, '%')
+                or nick_name like CONCAT('%', #{keyWord}, '%')
+            </if>
+            <if test="startTime != null">
+                and gmt_created <![CDATA[ >= ]]> #{startTime}
+            </if>
+            <if test="endTime != null">
+                and gmt_created <![CDATA[ <= ]]> #{endTime}
+            </if>>
+        </where>
+    </select>
+
+    <select id="findByIds" resultMap="userResultMap">
+        select * from kb_user
+        <where>
+            id in
+                 <foreach item="item" index="index" collection='ids'
+                     open="(" separator="," close=")">
+                 </foreach>
+        </where>
+    </select>
+
 </mapper>

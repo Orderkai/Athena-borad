@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper>
+    <resultMap id="taskGroupResultMap" type="com.geekcloud.kanborad.dataobject.TaskGroupDO">
+        <id column="id" property="id"/>
+        <result column="gmt_created" property="gmtCreated"/>
+        <result column="gmt_modified" property="gmtModified"/>
+        <result column="title" property="title"/>
+        <result column="task_ids" property="taskIds"/>
+    </resultMap>
+    
+    <insert id="add" parameterType="com.geekcloud.kanborad.dataobject.TaskGroupDO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO kb_task_group (gmt_created, gmt_modified, title, task_ids)
+        VALUES (
+        now(), now(), #{title}, #{taskIds}
+        )
+    </insert>
+
+    <update id="update" parameterType="com.geekcloud.kanborad.dataobject.TaskGroupDO">
+        update kb_task_group
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="taskIds != null">
+                task_ids = #{taskIds},
+            </if>
+        </set>
+        gmt_modified=now()
+        where id=#{id}
+    </update>
+
+    <delete id="delete">
+        delete from kb_task_group where id=#{id}
+    </delete>
+
+    <select id="findById" resultMap="taskGroupResultMap">
+        select * from kb_task_group where id=#{id}
+    </select>
+
+    <select id="findAll" resultMap="taskGroupResultMap">
+        select * from kb_task_group order by id asc
+    </select>
+    
+    
+</mapper>

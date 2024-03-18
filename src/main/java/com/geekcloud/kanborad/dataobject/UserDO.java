@@ -1,5 +1,7 @@
 package com.geekcloud.kanborad.dataobject;
 
+import com.geekcloud.kanborad.model.User;
+
 import java.time.LocalDateTime;
 
 public class UserDO {
@@ -71,5 +73,21 @@ public class UserDO {
 
     public void setGmtModified(LocalDateTime gmtModified) {
         this.gmtModified = gmtModified;
+    }
+
+    /**
+     * DO 转换为 Model
+     *
+     * @return User
+     */
+    public User toModel() {
+        User user = new User();
+        user.setId(getId());
+        user.setUserName(getUserName());
+        user.setNickName(getNickName());
+        user.setAvatar(getAvatar());
+        user.setGmtCreated(getGmtCreated());
+        user.setGmtModified(getGmtModified());
+        return user;
     }
 }

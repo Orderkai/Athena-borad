@@ -11,5 +11,10 @@ public interface UserService {
 
     Result<User> register(String userName, String pwd);
 
+    User findByUserName(String userName);
+
+    List<User> findByIds(List<Long> ids);
+
+    List<User> search(String keyWord, LocalDateTime startTime, LocalDateTime endTime);
 
 }
