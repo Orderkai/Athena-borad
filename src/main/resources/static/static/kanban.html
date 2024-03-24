@@ -1,0 +1,4053 @@
+<!--帮我整理一下这个页面的功能-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./styles/favicon/favicon.ico" type="image/x-icon"/>
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./styles/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./styles/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>Dashkit</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    <!-- Modal: Members -->
+    <div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-card card" data-list='{"valueNames": ["name"]}'>
+            <div class="card-header">
+    
+              <!-- Title -->
+              <h4 class="card-header-title" id="exampleModalCenterTitle">
+                Add a member
+              </h4>
+    
+              <!-- Close -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            </div>
+            <div class="card-header">
+    
+              <!-- Form -->
+              <form>
+                <div class="input-group input-group-flush input-group-merge input-group-reverse">
+                  <input class="form-control list-search" type="search" placeholder="Search">
+                  <div class="input-group-text">
+                    <span class="fe fe-search"></span>
+                  </div>
+                </div>
+              </form>
+    
+            </div>
+            <div class="card-body">
+    
+              <!-- List group -->
+              <ul class="list-group list-group-flush list my-n3">
+                <li class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a href="./profile-posts.html" class="avatar">
+                        <img src="./styles/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Title -->
+                      <h4 class="mb-1 name">
+                        <a href="./profile-posts.html">Miyah Myles</a>
+                      </h4>
+    
+                      <!-- Time -->
+                      <p class="small mb-0">
+                        <span class="text-success">鈼?</span> Online
+                      </p>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Button -->
+                      <a href="#!" class="btn btn-sm btn-white">
+                        Add
+                      </a>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </li>
+                <li class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a href="./profile-posts.html" class="avatar">
+                        <img src="./styles/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Title -->
+                      <h4 class="mb-1 name">
+                        <a href="./profile-posts.html">Ryu Duke</a>
+                      </h4>
+    
+                      <!-- Time -->
+                      <p class="small mb-0">
+                        <span class="text-success">鈼?</span> Online
+                      </p>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Button -->
+                      <a href="#!" class="btn btn-sm btn-white">
+                        Add
+                      </a>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </li>
+                <li class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a href="./profile-posts.html" class="avatar">
+                        <img src="./styles/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Title -->
+                      <h4 class="mb-1 name">
+                        <a href="./profile-posts.html">Glen Rouse</a>
+                      </h4>
+    
+                      <!-- Time -->
+                      <p class="small mb-0">
+                        <span class="text-warning">鈼?</span> Busy
+                      </p>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Button -->
+                      <a href="#!" class="btn btn-sm btn-white">
+                        Add
+                      </a>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </li>
+                <li class="list-group-item">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a href="./profile-posts.html" class="avatar">
+                        <img src="./styles/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Title -->
+                      <h4 class="mb-1 name">
+                        <a href="./profile-posts.html">Grace Gross</a>
+                      </h4>
+    
+                      <!-- Time -->
+                      <p class="small mb-0">
+                        <span class="text-danger">鈼?</span> Offline
+                      </p>
+    
+                    </div>
+                    <div class="col-auto">
+    
+                      <!-- Button -->
+                      <a href="#!" class="btn btn-sm btn-white">
+                        Add
+                      </a>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal: Kanban task -->
+    <div class="modal fade" id="modalKanbanTask" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-lighter">
+          <div class="modal-body">
+    
+            <!-- Header -->
+            <div class="row">
+              <div class="col">
+    
+                <!-- Prettitle -->
+                <h6 class="text-uppercase text-muted mb-3">
+                  <a href="#!" class="text-reset">How to Use Kanban</a>
+                </h6>
+    
+                <!-- Title -->
+                <h2 class="mb-2">
+                  Update Dashkit to include new components!
+                </h2>
+    
+                <!-- Subtitle -->
+                <p class="text-muted mb-0">
+                  This is a description of this task. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum magna nisi, ultrices ut pharetra eget.
+                </p>
+    
+              </div>
+              <div class="col-auto">
+    
+                <!-- Close -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+              </div>
+            </div> <!-- / .row -->
+    
+            <!-- Divider -->
+            <hr class="my-4">
+    
+            <!-- Buttons -->
+            <div class="mb-4">
+              <div class="row">
+                <div class="col">
+    
+                  <!-- Reaction -->
+                  <a href="#!" class="btn btn-sm btn-white">
+                    馃槵 1
+                  </a>
+                  <a href="#!" class="btn btn-sm btn-white">
+                    馃憤 2
+                  </a>
+                  <a href="#!" class="btn btn-sm btn-white">
+                    Add Reaction
+                  </a>
+    
+                </div>
+                <div class="col-auto me-n3">
+    
+                  <!-- Avatar group -->
+                  <div class="avatar-group d-none d-sm-flex">
+                    <a href="./profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                      <img src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+                    <a href="./profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                      <img src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+                    <a href="./profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                      <img src="./styles/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+                    <a href="./profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Miyah Myles">
+                      <img src="./styles/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+                  </div>
+    
+                </div>
+                <div class="col-auto">
+    
+                  <!-- Button -->
+                  <a href="#!" class="btn btn-sm btn-white">
+                    Share
+                  </a>
+    
+                </div>
+              </div> <!-- / .row -->
+            </div>
+    
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+    
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  Files
+                </h4>
+    
+                <!-- Button -->
+                <a href="#!" class="btn btn-sm btn-white">
+                  Add files
+                </a>
+    
+              </div>
+              <div class="card-body">
+                <div class="list-group list-group-flush my-n3">
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+    
+                        <!-- Avatar -->
+                        <a href="./project-overview.html" class="avatar">
+                          <img src="./styles/img/files/file-1.jpg" alt="..." class="avatar-img rounded">
+                        </a>
+    
+                      </div>
+                      <div class="col ms-n2">
+    
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./project-overview.html">Launchday logo</a>
+                        </h4>
+    
+                        <!-- Time -->
+                        <p class="card-text small text-muted">
+                          1.5mb PNG Dave
+                        </p>
+    
+                      </div>
+                      <div class="col-auto">
+    
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+    
+                        <!-- Avatar -->
+                        <a href="./project-overview.html" class="avatar">
+                          <img src="./styles/img/files/file-1.jpg" alt="..." class="avatar-img rounded">
+                        </a>
+    
+                      </div>
+                      <div class="col ms-n2">
+    
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./project-overview.html">Launchday logo</a>
+                        </h4>
+    
+                        <!-- Time -->
+                        <p class="card-text small text-muted">
+                          1.5mb PNG Dave
+                        </p>
+    
+                      </div>
+                      <div class="col-auto">
+    
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+    
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="...">
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Form -->
+                    <form class="mt-1">
+                      <textarea class="form-control form-control-flush form-control" data-autosize rows="1" placeholder="Leave a comment"></textarea>
+                    </form>
+    
+                  </div>
+                  <div class="col-auto align-self-end">
+    
+                    <!-- Icons -->
+                    <div class="text-muted mb-2">
+                      <a href="#!" class="text-reset me-3">
+                        <i class="fe fe-camera"></i>
+                      </a>
+                      <a href="#!" class="text-reset me-3">
+                        <i class="fe fe-paperclip"></i>
+                      </a>
+                      <a href="#!" class="text-reset">
+                        <i class="fe fe-mic"></i>
+                      </a>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+    
+                <!-- Comments -->
+                <div class="comment mb-3">
+                  <div class="row">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a class="avatar avatar-sm" href="./profile-posts.html">
+                        <img src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Body -->
+                      <div class="comment-body">
+    
+                        <div class="row">
+                          <div class="col">
+    
+                            <!-- Title -->
+                            <h5 class="comment-title">
+                              Ab Hadley
+                            </h5>
+    
+                          </div>
+                          <div class="col-auto">
+    
+                            <!-- Time -->
+                            <time class="comment-time">
+                              11:12
+                            </time>
+    
+                          </div>
+                        </div> <!-- / .row -->
+    
+                        <!-- Text -->
+                        <p class="comment-text">
+                          Looking good Dianna! I like the image grid on the left, but it feels like a lot to process and doesn't really <em>show</em> me what the product does? I think using a short looping video or something similar demo'ing the product might be better?
+                        </p>
+    
+                      </div>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+                <div class="comment">
+                  <div class="row">
+                    <div class="col-auto">
+    
+                      <!-- Avatar -->
+                      <a class="avatar avatar-sm" href="./profile-posts.html">
+                        <img src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                      </a>
+    
+                    </div>
+                    <div class="col ms-n2">
+    
+                      <!-- Body -->
+                      <div class="comment-body">
+    
+                        <div class="row">
+                          <div class="col">
+    
+                            <!-- Title -->
+                            <h5 class="comment-title">
+                              Adolfo Hess
+                            </h5>
+    
+                          </div>
+                          <div class="col-auto">
+    
+                            <!-- Time -->
+                            <time class="comment-time">
+                              11:12
+                            </time>
+    
+                          </div>
+                        </div> <!-- / .row -->
+    
+                        <!-- Text -->
+                        <p class="comment-text">
+                          Any chance you're going to link the grid up to a public gallery of sites built with Launchday?
+                        </p>
+    
+                      </div>
+    
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+    
+              </div>
+            </div>
+    
+            <!-- Card -->
+            <div class="card mb-0">
+              <div class="card-header">
+    
+                <!-- Title -->
+                <h4 class="card-header-title">
+                  Activity
+                </h4>
+    
+              </div>
+              <div class="card-body">
+                <div class="list-group list-group-flush list-group-activity my-n3">
+                  <div class="list-group-item">
+                    <div class="row">
+                      <div class="col-auto">
+    
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm">
+                          <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="...">
+                        </div>
+    
+                      </div>
+                      <div class="col ms-n2">
+    
+                        <!-- Heading -->
+                        <h5 class="mb-1">
+                          Johnathan Goldstein
+                        </h5>
+    
+                        <!-- Text -->
+                        <p class="small text-gray-700 mb-0">
+                          Uploaded the files 鈥淟aunchday Logo鈥? and 鈥淩evisiting the Past鈥?.
+                        </p>
+    
+                        <!-- Time -->
+                        <small class="text-muted">
+                          2m ago
+                        </small>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row">
+                      <div class="col-auto">
+    
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm">
+                          <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="...">
+                        </div>
+    
+                      </div>
+                      <div class="col ms-n2">
+    
+                        <!-- Heading -->
+                        <h5 class="mb-1">
+                          Johnathan Goldstein
+                        </h5>
+    
+                        <!-- Text -->
+                        <p class="small text-gray-700 mb-0">
+                          Uploaded the files 鈥淟aunchday Logo鈥? and 鈥淩evisiting the Past鈥?.
+                        </p>
+    
+                        <!-- Time -->
+                        <small class="text-muted">
+                          2m ago
+                        </small>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="list-group-item">
+                    <div class="row">
+                      <div class="col-auto">
+    
+                        <!-- Avatar -->
+                        <div class="avatar avatar-sm">
+                          <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="...">
+                        </div>
+    
+                      </div>
+                      <div class="col ms-n2">
+    
+                        <!-- Heading -->
+                        <h5 class="mb-1">
+                          Johnathan Goldstein
+                        </h5>
+    
+                        <!-- Text -->
+                        <p class="small text-gray-700 mb-0">
+                          Uploaded the files 鈥淟aunchday Logo鈥? and 鈥淩evisiting the Past鈥?.
+                        </p>
+    
+                        <!-- Time -->
+                        <small class="text-muted">
+                          2m ago
+                        </small>
+    
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal: Kanban task empty -->
+    <div class="modal fade" id="modalKanbanTaskEmpty" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-lighter">
+          <div class="modal-body">
+    
+            <!-- Header -->
+            <div class="row">
+              <div class="col">
+    
+                <!-- Prettitle -->
+                <h6 class="text-uppercase text-muted mb-3">
+                  <a href="#!" class="text-reset">How to Use Kanban</a>
+                </h6>
+    
+                <!-- Title -->
+                <h2 class="mb-2">
+                  Update Dashkit to include new components!
+                </h2>
+    
+                <!-- Subtitle -->
+                <textarea class="form-control form-control-flush form-control-auto" data-autosize rows="1" placeholder="Add a description..."></textarea>
+    
+              </div>
+              <div class="col-auto">
+    
+                <!-- Close -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+              </div>
+            </div> <!-- / .row -->
+    
+            <!-- Divider -->
+            <hr class="my-4">
+    
+            <!-- Buttons -->
+            <div class="mb-4">
+              <div class="row">
+                <div class="col">
+    
+                  <!-- Button -->
+                  <a href="#!" class="btn btn-sm btn-white">
+                    Add Reaction
+                  </a>
+    
+                </div>
+                <div class="col-auto">
+    
+                  <!-- Button -->
+                  <a href="#!" class="btn btn-sm btn-white">
+                    Share
+                  </a>
+    
+                </div>
+              </div> <!-- / .row -->
+            </div>
+    
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <div class="dropzone dropzone-multiple" data-dropzone='{"url": "https://"}'>
+    
+                  <!-- Fallback -->
+                  <div class="fallback">
+                    <div class="form-group">
+                      <label class="form-label" for="customFileUpload">Choose file</label>
+                      <input class="form-control" type="file" id="customFileUpload" multiple>
+                    </div>
+                  </div>
+    
+                  <!-- Preview -->
+                  <ul class="dz-preview dz-preview-multiple list-group list-group-lg list-group-flush">
+                    <li class="list-group-item">
+                      <div class="row align-items-center">
+                        <div class="col-auto">
+    
+                          <!-- Image -->
+                          <div class="avatar">
+                            <img class="avatar-img rounded" src="data:image/svg+xml,%3csvg3c/svg%3e" alt="..." data-dz-thumbnail>
+                          </div>
+    
+                        </div>
+                        <div class="col ms-n3">
+    
+                          <!-- Heading -->
+                          <h4 class="mb-1" data-dz-name>...</h4>
+    
+                          <!-- Text -->
+                          <small class="text-muted" data-dz-size></small>
+    
+                        </div>
+                        <div class="col-auto">
+    
+                          <!-- Dropdown -->
+                          <div class="dropdown">
+                            <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fe fe-more-vertical"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                              <a href="#" class="dropdown-item" data-dz-remove>
+                                Remove
+                              </a>
+                            </div>
+                          </div>
+    
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
+            </div>
+    
+            <!-- Card -->
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="...">
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Form -->
+                    <form class="mt-1">
+                      <textarea class="form-control form-control-flush" data-autosize rows="1" placeholder="Leave a comment"></textarea>
+                    </form>
+    
+                  </div>
+                  <div class="col-auto align-self-end">
+    
+                    <!-- Icons -->
+                    <div class="text-muted mb-2">
+                      <a href="#!" class="text-reset me-3">
+                        <i class="fe fe-camera"></i>
+                      </a>
+                      <a href="#!" class="text-reset me-3">
+                        <i class="fe fe-paperclip"></i>
+                      </a>
+                      <a href="#!" class="text-reset">
+                        <i class="fe fe-mic"></i>
+                      </a>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS -->
+    
+    <!-- Offcanvas: Search -->
+    <div class="offcanvas offcanvas-start" id="sidebarOffcanvasSearch" tabindex="-1">
+      <div class="offcanvas-body" data-list='{"valueNames": ["name"]}'>
+    
+        <!-- Form -->
+        <form class="mb-4">
+          <div class="input-group input-group-merge input-group-rounded input-group-reverse">
+            <input class="form-control list-search" type="search" placeholder="Search">
+            <div class="input-group-text">
+              <span class="fe fe-search"></span>
+            </div>
+          </div>
+        </form>
+    
+        <!-- List group -->
+        <div class="my-n3">
+          <div class="list-group list-group-flush list-group-focus list">
+            <a class="list-group-item" href="./team-overview.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar">
+                    <img src="./styles/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Airbnb
+                  </h4>
+    
+                  <!-- Time -->
+                  <p class="small text-muted mb-0">
+                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./team-overview.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar">
+                    <img src="./styles/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Medium Corporation
+                  </h4>
+    
+                  <!-- Time -->
+                  <p class="small text-muted mb-0">
+                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./project-overview.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar avatar-4by3">
+                    <img src="./styles/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Homepage Redesign
+                  </h4>
+    
+                  <!-- Time -->
+                  <p class="small text-muted mb-0">
+                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./project-overview.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar avatar-4by3">
+                    <img src="./styles/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Travels & Time
+                  </h4>
+    
+                  <!-- Time -->
+                  <p class="small text-muted mb-0">
+                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./project-overview.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar avatar-4by3">
+                    <img src="./styles/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Safari Exploration
+                  </h4>
+    
+                  <!-- Time -->
+                  <p class="small text-muted mb-0">
+                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./profile-posts.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar">
+                    <img src="./styles/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Dianna Smiley
+                  </h4>
+    
+                  <!-- Status -->
+                  <p class="text-body small mb-0">
+                    <span class="text-success">鈼?</span> Online
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+            <a class="list-group-item" href="./profile-posts.html">
+              <div class="row align-items-center">
+                <div class="col-auto">
+    
+                  <!-- Avatar -->
+                  <div class="avatar">
+                    <img src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                  </div>
+    
+                </div>
+                <div class="col ms-n2">
+    
+                  <!-- Title -->
+                  <h4 class="text-body text-focus mb-1 name">
+                    Ab Hadley
+                  </h4>
+    
+                  <!-- Status -->
+                  <p class="text-body small mb-0">
+                    <span class="text-danger">鈼?</span> Offline
+                  </p>
+    
+                </div>
+              </div> <!-- / .row -->
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!-- Offcanvas: Activity -->
+    <div class="offcanvas offcanvas-start" id="sidebarOffcanvasActivity" tabindex="-1">
+      <div class="offcanvas-header">
+    
+        <!-- Title -->
+        <h4 class="offcanvas-title">
+          Notifications
+        </h4>
+    
+        <!-- Navs -->
+        <ul class="nav nav-tabs nav-tabs-sm modal-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#modalActivityAction">Action</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#modalActivityUser">User</a>
+          </li>
+        </ul>
+    
+      </div>
+      <div class="offcanvas-body">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="modalActivityAction">
+    
+            <!-- List group -->
+            <div class="list-group list-group-flush list-group-activity my-n3">
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-mail"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Launchday 1.4.0 update email sent
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Sent to all 1,851 subscribers over a 24 hour period
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-archive"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      New project "Goodkit" created
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Looks like there might be a new theme soon.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-code"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dashkit 1.5.0 was deployed.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      A successful to deploy to production was executed.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-git-branch"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      "Update Dependencies" branch was created.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      This branch was created off of the "master" branch.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-mail"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Launchday 1.4.0 update email sent
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Sent to all 1,851 subscribers over a 24 hour period
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-archive"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      New project "Goodkit" created
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Looks like there might be a new theme soon.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-code"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dashkit 1.5.0 was deployed.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      A successful to deploy to production was executed.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-git-branch"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      "Update Dependencies" branch was created.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      This branch was created off of the "master" branch.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-mail"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Launchday 1.4.0 update email sent
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Sent to all 1,851 subscribers over a 24 hour period
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-archive"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      New project "Goodkit" created
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Looks like there might be a new theme soon.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-code"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dashkit 1.5.0 was deployed.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      A successful to deploy to production was executed.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm">
+                      <div class="avatar-title fs-lg bg-primary-soft rounded-circle text-primary">
+                        <i class="fe fe-git-branch"></i>
+                      </div>
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      "Update Dependencies" branch was created.
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      This branch was created off of the "master" branch.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+            </div>
+    
+          </div>
+          <div class="tab-pane fade" id="modalActivityUser">
+    
+            <!-- List group -->
+            <div class="list-group list-group-flush list-group-activity my-n3">
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dianna Smiley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Uploaded the files "Launchday Logo" and "New Design".
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Ab Hadley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Shared the "Why Dashkit?" post with 124 subscribers.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      1h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-offline">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Adolfo Hess
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Exported sales data from Launchday's subscriber data.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      3h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dianna Smiley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Uploaded the files "Launchday Logo" and "New Design".
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Ab Hadley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Shared the "Why Dashkit?" post with 124 subscribers.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      1h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-offline">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Adolfo Hess
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Exported sales data from Launchday's subscriber data.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      3h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dianna Smiley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Uploaded the files "Launchday Logo" and "New Design".
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Ab Hadley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Shared the "Why Dashkit?" post with 124 subscribers.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      1h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-offline">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Adolfo Hess
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Exported sales data from Launchday's subscriber data.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      3h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Dianna Smiley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Uploaded the files "Launchday Logo" and "New Design".
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      2m ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-online">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Ab Hadley
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Shared the "Why Dashkit?" post with 124 subscribers.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      1h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#!">
+                <div class="row">
+                  <div class="col-auto">
+    
+                    <!-- Avatar -->
+                    <div class="avatar avatar-sm avatar-offline">
+                      <img class="avatar-img rounded-circle" src="./styles/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                    </div>
+    
+                  </div>
+                  <div class="col ms-n2">
+    
+                    <!-- Heading -->
+                    <h5 class="mb-1">
+                      Adolfo Hess
+                    </h5>
+    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      Exported sales data from Launchday's subscriber data.
+                    </p>
+    
+                    <!-- Time -->
+                    <small class="text-muted">
+                      3h ago
+                    </small>
+    
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light" id="sidebar">
+      <div class="container-fluid">
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./styles/img/logo.svg" class="navbar-brand-img mx-auto" alt="...">
+        </a>
+    
+        <!-- User (xs) -->
+        <div class="navbar-user d-md-none">
+    
+          <!-- Dropdown -->
+          <div class="dropdown">
+    
+            <!-- Toggle -->
+            <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar avatar-sm avatar-online">
+                <img src="./styles/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+              </div>
+            </a>
+    
+            <!-- Menu -->
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarIcon">
+              <a href="./profile-posts.html" class="dropdown-item">Profile</a>
+              <a href="./account-general.html" class="dropdown-item">Settings</a>
+              <hr class="dropdown-divider">
+              <a href="./sign-in.html" class="dropdown-item">Logout</a>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidebarCollapse">
+    
+          <!-- Form -->
+          <form class="mt-4 mb-3 d-md-none">
+            <div class="input-group input-group-rounded input-group-merge input-group-reverse">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-text">
+                <span class="fe fe-search"></span>
+              </div>
+            </div>
+          </form>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                <i class="fe fe-home"></i> Dashboards
+              </a>
+              <div class="collapse " id="sidebarDashboards">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link ">
+                      Default
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./dashboard-project-management.html" class="nav-link ">
+                      Project Management
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./dashboard-ecommerce.html" class="nav-link ">
+                      E-Commerce
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
+                <i class="fe fe-file"></i> Pages
+              </a>
+              <div class="collapse show" id="sidebarPages">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccount">
+                      Account
+                    </a>
+                    <div class="collapse " id="sidebarAccount">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./account-general.html" class="nav-link ">
+                            General
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./account-billing.html" class="nav-link ">
+                            Billing
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./account-members.html" class="nav-link ">
+                            Members
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./account-security.html" class="nav-link ">
+                            Security
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./account-notifications.html" class="nav-link ">
+                            Notifications
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarCrm" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrm">
+                      CRM
+                    </a>
+                    <div class="collapse " id="sidebarCrm">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./crm-contacts.html" class="nav-link ">
+                            Contacts
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./crm-companies.html" class="nav-link ">
+                            Companies
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./crm-deals.html" class="nav-link ">
+                            Deals
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile">
+                      Profile
+                    </a>
+                    <div class="collapse " id="sidebarProfile">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./profile-posts.html" class="nav-link ">
+                            Posts
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./profile-groups.html" class="nav-link ">
+                            Groups
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./profile-projects.html" class="nav-link ">
+                            Projects
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./profile-files.html" class="nav-link ">
+                            Files
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./profile-subscribers.html" class="nav-link ">
+                            Subscribers
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarProject" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProject">
+                      Project
+                    </a>
+                    <div class="collapse " id="sidebarProject">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./project-overview.html" class="nav-link ">
+                            Overview
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./project-files.html" class="nav-link ">
+                            Files
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./project-reports.html" class="nav-link ">
+                            Reports
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./project-new.html" class="nav-link ">
+                            New project
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarTeam" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTeam">
+                      Team
+                    </a>
+                    <div class="collapse " id="sidebarTeam">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./team-overview.html" class="nav-link ">
+                            Overview
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./team-projects.html" class="nav-link ">
+                            Projects
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./team-members.html" class="nav-link ">
+                            Members
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./team-new.html" class="nav-link ">
+                            New team
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarFeed" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarFeed">
+                      Feed
+                    </a>
+                    <div class="collapse " id="sidebarFeed">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./feed.html" class="nav-link ">
+                            Platform
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./social-feed.html" class="nav-link ">
+                            Social
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./wizard.html" class="nav-link ">
+                      Wizard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./kanban.html" class="nav-link active">
+                      Kanban
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./orders.html" class="nav-link ">
+                      Orders
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./invoice.html" class="nav-link ">
+                      Invoice
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pricing.html" class="nav-link ">
+                      Pricing
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./widgets.html">
+                <i class="fe fe-grid"></i> Widgets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
+                <i class="fe fe-user"></i> Authentication
+              </a>
+              <div class="collapse" id="sidebarAuth">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn">
+                      Sign in
+                    </a>
+                    <div class="collapse" id="sidebarSignIn">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./sign-in-cover.html" class="nav-link">
+                            Cover
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./sign-in-illustration.html" class="nav-link">
+                            Illustration
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./sign-in.html" class="nav-link">
+                            Basic
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignUp">
+                      Sign up
+                    </a>
+                    <div class="collapse" id="sidebarSignUp">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./sign-up-cover.html" class="nav-link">
+                            Cover
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./sign-up-illustration.html" class="nav-link">
+                            Illustration
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./sign-up.html" class="nav-link">
+                            Basic
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarPassword" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPassword">
+                      Password reset
+                    </a>
+                    <div class="collapse" id="sidebarPassword">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./password-reset-cover.html" class="nav-link">
+                            Cover
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./password-reset-illustration.html" class="nav-link">
+                            Illustration
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./password-reset.html" class="nav-link">
+                            Basic
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#sidebarError" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarError">
+                      Error
+                    </a>
+                    <div class="collapse" id="sidebarError">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="./error-illustration.html" class="nav-link">
+                            Illustration
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./error.html" class="nav-link">
+                            Basic
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasActivity" aria-contrtols="sidebarOffcanvasActivity">
+                <span class="fe fe-bell"></span> Notifications
+              </a>
+            </li>
+          </ul>
+    
+          <!-- Divider -->
+          <hr class="navbar-divider my-3">
+    
+          <!-- Heading -->
+          <h6 class="navbar-heading">
+            Documentation
+          </h6>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarBasics" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarBasics">
+                <i class="fe fe-clipboard"></i> Basics
+              </a>
+              <div class="collapse " id="sidebarBasics">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="./docs/getting-started.html" class="nav-link ">
+                      Getting Started
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./docs/design-file.html" class="nav-link ">
+                      Design File
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sidebarComponents" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarComponents">
+                <i class="fe fe-book-open"></i> Components
+              </a>
+              <div class="collapse " id="sidebarComponents">
+                <ul class="nav nav-sm flex-column">
+                  <li>
+                    <a href="./docs/components.html#alerts" class="nav-link">
+                      Alerts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#autosize" class="nav-link">
+                      Autosize
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#avatars" class="nav-link">
+                      Avatars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#badges" class="nav-link">
+                      Badges
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#breadcrumb" class="nav-link">
+                      Breadcrumb
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#buttons" class="nav-link">
+                      Buttons
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#buttonGroup" class="nav-link">
+                      Button group
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#cards" class="nav-link">
+                      Cards
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#charts" class="nav-link">
+                      Charts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#checklist" class="nav-link">
+                      Checklist
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#dropdowns" class="nav-link">
+                      Dropdowns
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#forms" class="nav-link">
+                      Forms
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#icons" class="nav-link">
+                      Icons
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#kanban" class="nav-link">
+                      Kanban
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#lists" class="nav-link">
+                      Lists
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#map" class="nav-link">
+                      Map
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#modals" class="nav-link">
+                      Modal
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#navs" class="nav-link">
+                      Navs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#navbarDocs" class="nav-link">
+                      Navbar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#pageHeaders" class="nav-link">
+                      Page headers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#pagination" class="nav-link">
+                      Pagination
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#popovers" class="nav-link">
+                      Popovers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#progress" class="nav-link">
+                      Progress
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#socialPosts" class="nav-link">
+                      Social post
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#spinners" class="nav-link">
+                      Spinners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#tables" class="nav-link">
+                      Tables
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#toasts" class="nav-link">
+                      Toasts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#tooltips" class="nav-link">
+                      Tooltips
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#typography" class="nav-link">
+                      Typography
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./docs/components.html#utilities" class="nav-link">
+                      Utilities
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./docs/changelog.html">
+                <i class="fe fe-git-branch"></i> Changelog <span class="badge bg-primary ms-auto">v2.0.0</span>
+              </a>
+            </li>
+          </ul>
+    
+          <!-- Push content down -->
+          <div class="mt-auto"></div>
+    
+    
+            <!-- User (md) -->
+            <div class="navbar-user d-none d-md-flex" id="sidebarUser">
+    
+              <!-- Icon -->
+              <a class="navbar-user-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasActivity" aria-controls="sidebarOffcanvasActivity">
+                <span class="icon">
+                  <i class="fe fe-bell"></i>
+                </span>
+              </a>
+    
+              <!-- Dropup -->
+              <div class="dropup">
+    
+                <!-- Toggle -->
+                <a href="#" id="sidebarIconCopy" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="avatar avatar-sm avatar-online">
+                    <img src="./styles/img/avatars/profiles/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                  </div>
+                </a>
+    
+                <!-- Menu -->
+                <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
+                  <a href="./profile-posts.html" class="dropdown-item">Profile</a>
+                  <a href="./account-general.html" class="dropdown-item">Settings</a>
+                  <hr class="dropdown-divider">
+                  <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                </div>
+    
+              </div>
+    
+              <!-- Icon -->
+              <a class="navbar-user-link" data-bs-toggle="offcanvas" href="#sidebarOffcanvasSearch" aria-controls="sidebarOffcanvasSearch">
+                <span class="icon">
+                  <i class="fe fe-search"></i>
+                </span>
+              </a>
+    
+            </div>
+    
+        </div> <!-- / .navbar-collapse -->
+    
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      
+
+      <!-- HEADER -->
+      <div class="header">
+        <div class="container-fluid">
+
+          <!-- Body -->
+          <div class="header-body">
+            <div class="row align-items-center">
+              <div class="col">
+
+                <!-- Pretitle -->
+                <h6 class="header-pretitle">
+                  Kanban boards
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title">
+                  Landkit Update
+                </h1>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Buttons -->
+                <a href="#!" class="btn btn-white me-2">
+                  Edit
+                </a>
+
+                <!-- Navigation (button group) -->
+                <div class="nav btn-group d-inline-flex" role="tablist">
+                  <button class="btn btn-white active" id="kanbanColumnsToggle" data-bs-toggle="tab" data-bs-target="#kanbanColumns" role="tab" aria-controls="kabbanColumns" aria-selected="true">
+                    <span class="fe fe-grid"></span>
+                  </button>
+                  <button class="btn btn-white" id="kanbanListToggle" data-bs-toggle="tab" data-bs-target="#kanbanList" role="tab" aria-controls="kanbanList" aria-selected="false">
+                    <span class="fe fe-list"></span>
+                  </button>
+                </div> <!-- / .nav -->
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="kanbanColumns" role="tabpanel" aria-labelledby="kanbanColumnsToggle">
+          <div class="container-fluid kanban-container">
+            <div class="row">
+              <div class="col-12">
+
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-header card-header-flush">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      How to Use Kanban
+                    </h4>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#!" class="dropdown-item">
+                          Action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Another action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Something else here
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃?? Drag me</strong> around to move me within this list of between lists.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憜 Click me</strong> to open a modal that shows all the description, comments, files, and activity associated with this card.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃悾 Click me</strong> to see that same modal, but for a task that is brand new and doesn't have activity or files.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憞 Click "Add Card"</strong> at the bottom of this column to see what creating a new card looks like. You can even add a date.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憠 Click "Add List"</strong> past the last column on the right to see what it looks like to name a new column.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>鈿欙笍 Click the grid/list toggle</strong> in the top right of this page to see what these tasks look like organized as a draggable list!
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <div class="text-center">
+                            <a class="kanban-add-link" href="#!">Add Card</a>
+                          </div>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+
+                            <!-- Input -->
+                            <div class="form-group">
+                              <textarea class="form-control form-control-flush form-control-auto" placeholder="Draft your card"></textarea>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-header card-header-flush">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Release 1.1.0
+                    </h4>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#!" class="dropdown-item">
+                          Action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Another action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Something else here
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Create the release notes for the new pages so customers are aware.
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jun 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+
+                          <!-- Image -->
+                          <img src="styles/img/kanban/kanban-2.jpg" alt="..." class="card-img-top">
+
+                          <!-- Body -->
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Finish the design for blog listings and articles, including mixed media
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-message-circle"></i> 23 <i class="fe fe-clock ms-3"></i> Sep 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                                    <img src="styles/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+
+                            <!-- Badge -->
+                            <p class="mb-3">
+                              <span class="badge bg-success-soft">
+                                Reviewed
+                              </span>
+                            </p>
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Clear all the deprecation warnings for out of date NPM packages
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Review all the indentation changes to be sure they will resolve all customer issues
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jun 11
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Miyah Miles">
+                                    <img src="styles/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <div class="text-center">
+                            <a class="kanban-add-link" href="#!">Add Card</a>
+                          </div>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+
+                            <!-- Input -->
+                            <div class="form-group">
+                              <textarea class="form-control form-control-flush form-control-auto" placeholder="Draft your card"></textarea>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-header card-header-flush">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Next Up
+                    </h4>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#!" class="dropdown-item">
+                          Action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Another action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Something else here
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Design portfolio pages and a case study focused page
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jul 6
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ryu Duke">
+                                    <img src="styles/img/avatars/profiles/avatar-6.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Create a screenshot component extension for highlighting hotspots with popover hovers
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+
+                          <!-- Image -->
+                          <img src="styles/img/kanban/kanban-1.jpg" alt="..." class="card-img-top">
+
+                          <!-- Body -->
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Include an even larger library of illustrations that we can provide in SVG that cover more use cases
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-message-circle"></i> 23 <i class="fe fe-clock ms-3"></i> Sep 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                                    <img src="styles/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Create basic auth pages (login, sign up, forgot password) even though we don't have any settings yet
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Code up the utility pages for basic errors and failure states
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jul 12
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <div class="text-center">
+                            <a class="kanban-add-link" href="#!">Add Card</a>
+                          </div>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+
+                            <!-- Input -->
+                            <div class="form-group">
+                              <textarea class="form-control form-control-flush form-control-auto" placeholder="Draft your card"></textarea>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-header card-header-flush">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Release 1.1.0
+                    </h4>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                      <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#!" class="dropdown-item">
+                          Action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Another action
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                          Something else here
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Create the release notes for the new pages so customers are aware.
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jun 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+
+                          <!-- Image -->
+                          <img src="styles/img/kanban/kanban-2.jpg" alt="..." class="card-img-top">
+
+                          <!-- Body -->
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Finish the design for blog listings and articles, including mixed media
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-message-circle"></i> 23 <i class="fe fe-clock ms-3"></i> Sep 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                                    <img src="styles/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+
+                            <!-- Badge -->
+                            <p class="mb-3">
+                              <span class="badge bg-success-soft">
+                                Reviewed
+                              </span>
+                            </p>
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Clear all the deprecation warnings for out of date NPM packages
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p>
+                              Review all the indentation changes to be sure they will resolve all customer issues
+                            </p>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted">
+                                  <i class="fe fe-clock"></i> Jun 11
+                                </p>
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Miyah Miles">
+                                    <img src="styles/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <div class="text-center">
+                            <a class="kanban-add-link" href="#!">Add Card</a>
+                          </div>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+
+                            <!-- Input -->
+                            <div class="form-group">
+                              <textarea class="form-control form-control-flush form-control-auto" placeholder="Draft your card"></textarea>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="row align-items-center">
+                              <div class="col d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Card -->
+                <div class="kanban-add">
+                  <div class="card mb-0">
+                    <div class="card-body">
+
+                      <!-- Link -->
+                      <div class="text-center">
+                        <a class="kanban-add-link" href="#!">Add list</a>
+                      </div>
+
+                      <!-- Form -->
+                      <form class="kanban-add-form d-none">
+                        <div class="d-flex align-items-center">
+
+                          <!-- Input -->
+                          <input type="text" class="form-control form-control-flush form-control-auto h4" placeholder="Name your list">
+
+                          <!-- Close -->
+                          <button class="btn-close ms-3" type="reset"></button>
+
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div>
+        <div class="tab-pane fade" id="kanbanList" role="tabpanel" aria-labelledby="kanbanListToggle">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+
+                <!-- List group -->
+                <div class="list-group list-group-lg list-group-flush">
+                  <div class="list-group-item">
+
+                    <!-- Header -->
+                    <div class="row align-items-center mb-4">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h2 class="mb-0">How to Use Kanban</h2>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Drodpown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃?? Drag me</strong> around to move me within this list of between lists.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憜 Click me</strong> to open a modal that shows all the description, comments, files, and activity associated with this card.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃悾 Click me</strong> to see that same modal, but for a task that is brand new and doesn't have activity or files.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憞 Click "Add Card"</strong> at the bottom of this section to see what creating a new card looks like. You can even add a date.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>馃憞 Click "Add List"</strong> past the last list section at the bottom of this page to see what it looks like to name a new list.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              <strong>鈿欙笍 Click the grid/column toggle</strong> in the top right of this page to see what these tasks look like organized as a draggable column!
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <a class="kanban-add-link" href="#!">+ Add Card</a>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-md">
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-flush form-control-auto" placeholder="Draft your card">
+
+                              </div>
+                              <div class="col-6 col-md-auto d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-6 col-md-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Header -->
+                    <div class="row align-items-center mb-4">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h2 class="mb-0">Release 1.1.0</h2>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Drodpown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Create the release notes for the new pages so customers are aware.
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-clock"></i> Jun 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Finish the design for blog listings and articles, including mixed media
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-message-circle"></i> 23 <i class="fe fe-clock ms-3"></i> Sep 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                                    <img src="styles/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+                            <span class="badge bg-success-soft me-2">Reviewed</span> Clear all the deprecation warnings for out of date NPM packages
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Review all the indentation changes to be sure they will resolve all customer issues
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-clock"></i> Jun 11
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Miyah Miles">
+                                    <img src="styles/img/avatars/profiles/avatar-5.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <a class="kanban-add-link" href="#!">+ Add Card</a>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-md">
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-flush form-control-auto" placeholder="Draft your card">
+
+                              </div>
+                              <div class="col-6 col-md-auto d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-6 col-md-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Header -->
+                    <div class="row align-items-center mb-4">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h2 class="mb-0">Next Up</h2>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Category -->
+                    <div class="kanban-category">
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Design portfolio pages and a case study focused page
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-clock"></i> Jul 6
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Rye Duke">
+                                    <img src="styles/img/avatars/profiles/avatar-6.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Create a screenshot component extension for highlighting hotspots with popover hovers
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Include an even larger library of illustrations that we can provide in SVG that cover more use cases
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-message-circle"></i> 23 <i class="fe fe-clock ms-3"></i> Sep 9
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Ab Hadley">
+                                    <img src="styles/img/avatars/profiles/avatar-2.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Daniela Dewitt">
+                                    <img src="styles/img/avatars/profiles/avatar-4.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTaskEmpty">
+                          <div class="card-body">
+
+                            <!-- Body -->
+                            <p class="mb-0">
+                              Create basic auth pages (login, sign up, forgot password) even though we don't have any settings yet
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Card -->
+                      <div class="kanban-item">
+                        <div class="card card-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalKanbanTask">
+                          <div class="card-body">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-sm">
+
+                                <!-- Body -->
+                                <p class="mb-sm-0">
+                                  Code up the utility pages for basic errors and failure states
+                                </p>
+
+                              </div>
+                              <div class="col col-sm-auto">
+
+                                <!-- Time -->
+                                <p class="card-text small text-muted mb-0">
+                                  <i class="fe fe-clock"></i> Jul 12
+                                </p>
+
+                              </div>
+                              <div class="col-auto col-sm-auto">
+
+                                <!-- Avatar group -->
+                                <div class="avatar-group">
+                                  <a href="profile-posts.html" class="avatar avatar-xs" data-bs-toggle="tooltip" title="Adolfo Hess">
+                                    <img src="styles/img/avatars/profiles/avatar-3.jpg" class="avatar-img rounded-circle" alt="...">
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+                      <div class="card card-sm card-flush mb-0">
+                        <div class="card-body">
+
+                          <!-- Link -->
+                          <a class="kanban-add-link" href="#!">+ Add Card</a>
+
+                          <!-- Form -->
+                          <form class="kanban-add-form d-none">
+                            <div class="row align-items-center">
+                              <div class="col-12 col-md">
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-flush form-control-auto" placeholder="Draft your card">
+
+                              </div>
+                              <div class="col-6 col-md-auto d-flex align-items-center">
+
+                                <!-- Icon -->
+                                <span class="text-muted small me-2">
+                                  <i class="fe fe-clock"></i>
+                                </span>
+
+                                <!-- Input -->
+                                <input type="text" class="form-control form-control-sm form-control-flush form-control-auto" text-muted" data-flatpickr data-options='{"dateFormat": "M j"}' placeholder="No due date">
+
+                              </div>
+                              <div class="col-6 col-md-auto">
+
+                                <!-- Buttons -->
+                                <button class="btn btn-sm btn-white" type="reset">
+                                  Cancel
+                                </button>
+                                <button class="btn btn-sm btn-primary" type="submit">
+                                  Add
+                                </button>
+
+                              </div>
+                            </div> <!-- / .row -->
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Add -->
+                    <div class="kanban-add">
+
+                      <!-- Link -->
+                      <a class="kanban-add-link h2" href="#!">
+                        + Add List
+                      </a>
+
+                      <!-- Form -->
+                      <form class="kanban-add-form d-none">
+                        <div class="row align-items-center">
+                          <div class="col-12 col-md">
+
+                            <!-- Button -->
+                            <input type="text" class="form-control form-control-flush form-control-auto h2" placeholder="Name your list">
+
+                          </div>
+                          <div class="col-auto">
+
+                            <!-- Buttons -->
+                            <button class="btn btn-sm btn-white" type="reset">
+                              Cancel
+                            </button>
+                            <button class="btn btn-sm btn-primary" type="submit">
+                              Add
+                            </button>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </form>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./styles/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./styles/js/theme.bundle.js"></script>
+
+  </body>
+</html>
