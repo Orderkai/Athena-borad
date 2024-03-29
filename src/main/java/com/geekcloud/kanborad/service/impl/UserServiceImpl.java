@@ -22,9 +22,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDAO userDAO;
 
-    @Autowired
-    private UserDO userDO;
-
     @Override
     public Result<User> register(String userName, String pwd) {
         Result<User> result = new Result<>();
